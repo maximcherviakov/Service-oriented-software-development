@@ -1,0 +1,23 @@
+basePath: /api/v1
+host: localhost:8080
+info:
+  contact: {}
+  description: A simple API using Gin framework with REST and SOAP endpoints
+  title: Practice 1 API
+  version: "1.0"
+paths:
+  /api/v1/health:
+    get:
+      description: Returns the health status of the API
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            additionalProperties: true
+            type: object
+      summary: Health check endpoint
+      tags:
+      - health
+swagger: "2.0"
